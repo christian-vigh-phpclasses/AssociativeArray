@@ -27,7 +27,7 @@ And, of course, it has been optimized to avoid unnecessary computations whenever
 
 # NOTICE #
 
-You may find the list of methods contained in this class a little bit poor and you will be true : I wanted to have a class that exactly fits my day-to-day needs, and nothing more.
+You may find the list of methods contained in this class a little bit poor and you will be true : I wanted to have a class that exactly fits my day-to-day needs, and nothing more (the day-to-day needs in question were very basic).
 
 However, if you have additional needs, you can freely add the methods of your choice or simply contact me to provide a new version ; I will be happy to enrich this class based on your suggestions.
 
@@ -52,6 +52,9 @@ The class implements the ArrayAccess, Countable and IteratorAggregate interfaces
 	// use a foreach() loop to achieve the same result (but additionally displays the key name)
 	foreach ( $array  as $key => $item )
 		echo "$key -> $item\n" ;
+
+	// Add a new element to the array 
+	$array [ 'newKey' ] 	=  'This is a new value' ;
  
 You can also use the *isset()* method to check for the existence of an individual element in an array, and *unset()* to remove a specific element from an array.
 
